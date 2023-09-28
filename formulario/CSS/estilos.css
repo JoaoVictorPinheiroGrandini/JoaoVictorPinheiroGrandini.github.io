@@ -1,0 +1,11 @@
+header h1, header p {
+    margin-left: 75px;
+}
+header p{
+    color: gray;
+    font-style: italic;
+}
+body section {
+    height: 50px;
+    background-color:  rgb(171, 151, 151);
+}
