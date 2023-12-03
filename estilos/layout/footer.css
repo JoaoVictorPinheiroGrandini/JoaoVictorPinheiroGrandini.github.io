@@ -1,0 +1,29 @@
+.footer {
+    background-color: #404040;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.footer__link {
+    margin: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.footer__link:hover {
+    background-color: white;
+    color: #404040;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
