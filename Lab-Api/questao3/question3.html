@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <link rel="stylesheet" href="../css/cssQuestions/question3.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <section>
+
+        <div class="form">
+
+            <h1>OpenWeather API</h1>
+            
+            <div class="inputs">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade">
+                
+                <label for="uf">País:</label>
+                <input type="text" name="pais" id="pais" placeholder="Digite o país (ex: BR)">
+        
+                <button id="pesquisar">Pesquisar Clima</button>
+    
+            </div>
+
+        </div>
+    
+        <div id="resposta">
+            
+        </div>
+
+
+    </section>
+
+
+    <section>
+        <h2>Locais com temperaturas extremas :(temperatura > 35ºC ou temperatura < 5ºC)</h2>
+    
+        <div class="inputs">
+            <button id="filtrar">Filtrar</button>
+        </div>
+    
+        <ul id="locaisFiltrados">
+            
+        </ul>
+    </section>
+
+</body>
+</html>

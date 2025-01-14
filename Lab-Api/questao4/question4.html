@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+	<div class="hero_section">
+		<h1> Biblioteca</h1>
+		<p>Doe um livro ou pegue um emprestado </p>
+	</div>
+
+	<section id="secAddBook">
+
+		<div class="section_header">
+			<h3>Cadastre um livro</h3>
+		</div>
+		
+		<div class="formAddBook form">
+			<div class="input">
+				<label for="titleA">Nome do livro:</label>
+				<input type="text" id="titleA" name="title" placeholder="Digite aqui">
+			</div>
+			
+			<div class="input">
+				<label for="author">Nome do autor:</label>
+				<input type="text" id="author" name="author" placeholder="Digite aqui">
+			</div>
+			
+			<button id="addBook">Adicionar Livro</button>
+		</div>
+		<p id="addBookP" class="resp"></p>
+	</section>
+
+	<hr>
+
+	<section id="secBorrowBook">
+
+		<div class="section_header">
+			<h3>Empréstimo de livros:</h3>
+		</div>
+
+		<div class="borrowBookForm form">
+			<div class="input">
+				<label for="titleB">Nome do livro:</label>
+				<input type="text" id="titleB" placeholder="Digite o nome do livro que você quer">
+			</div>
+			<button id="borrowBook">Pegar livro emprestado</button>
+		</div>
+		<p id="borrowBookP" class="resp"></p>
+	</section>
+    
+	<hr>
+
+    <section id="secReturnBook">
+		<div class="section_header">
+			<h3>Devolver um livro:</h3>
+		</div>
+
+	    <div class="returnBookForm form">
+		    <div class="input">
+			    <label for="titleR">Nome do livro:</label>
+			    <input type="text" id="titleR" placeholder="Digite o nome do livro">
+		    </div>
+		    
+		    <button id="returnBook">Devolver livro</button>
+	    </div>
+		<p id="returnBookP" class="resp"></p>
+	    
+	</section>
+    <hr>
+	<section id="borrowedBooksQuantity">
+
+		<div class="section_header">
+			<h3>Quantidade total de empréstimos de livros</h3>
+		</div>
+		
+		<p id="borrowedBooksQuantityP" class="resp">Quantidade de empréstimos totais: 0</p>
+	</section>
+	<hr>
+	<section id="secAvailableBooks">
+		<div class="section_header">
+			<h3>Livros que estão disponíveis:</h3>
+		</div>
+
+		<table id="availableBooksTable">
+			<thead>
+					<td> Nome do livro:</td>
+					<td> Autor do livro:</td>
+				</tr>
+			</thead>
+			<tbody id="availableBooksTableBody">
+				
+			</tbody>
+			<tfoot>
+			<tr>
+			</tr>
+			</tfoot>
+		</table>
+	</section>
+    <hr>
+    <section id="secBorrowedBooks">
+
+		<div class="section_header">
+			<h3>Livros que estão emprestados:</h3>
+		</div>
+
+	    <table id="borrowedBooksTable">
+		    <thead>
+		        <tr>
+		            <td> Nome do livro:</td>
+		            <td> Autor do livro:</td>
+		        </tr>
+		    </thead>
+		    <tbody id="borrowedBooksTableBody">
+				
+		    </tbody>
+		    <tfoot>
+		        <tr>
+		        </tr>
+		    </tfoot>
+	    </table>
+    </section>
+    <hr>
+	<section id="secAllBooks">
+		<div class="section_header">
+			<h3>Todos os livros da biblioteca:</h3>
+		</div>
+		
+		<table id="allBooksTable">
+			<thead>
+				<tr>
+					<td> Nome do livro:</td>
+					<td> Autor do livro:</td>
+				</tr>
+			</thead>
+			<tbody id="allBooksTableBody">
+			
+			</tbody>
+			<tfoot>
+				<tr>
+				</tr>
+			</tfoot>
+		</table>
+	</section>
+
+</body>
+</html>
