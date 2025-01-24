@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Insanas</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Receitas Insanas</h1>
+    <h2>encontre a receita certa para você</h2>
+    <section id="search">
+        <p>Ordenar por</p>
+        <select name="selectOrdenar" id="selectOrdenar">
+            <option value="nome">Nome</option>
+            <option value="data_criacao">Data</option>
+            <option value="ingredientes">Quantidade de ingredientes</option>
+        </select>
+
+        <input type="radio" name="ordenar" value="crescente" checked> Crescente
+        <input type="radio" name="ordenar" value="decrescente"> Decrescente
+        <p>Buscar por</p>
+        <div>
+            <select name="selectPesquisa" id="selectPesquisa">
+                <option value="nome">Nome</option>
+                <option value="tipo">Tipo</option>
+                <option value="data_criacao">Ano</option>
+                <option value="ingredientes">Ingrediente</option>
+            </select>
+            <input type="text" id="inputTexto">
+            <button id="botao">Buscar</button>
+        </div>    
+    </section>
+    <section id="recList">
+        
+    </section>
+        
+</body>
+</html>
